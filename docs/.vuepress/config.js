@@ -10,7 +10,7 @@ module.exports = {
     ['link', {rel: 'icon', href: '/favicon.jpg'}]
   ],
   themeConfig: {
-    lastUpdated: 'Last Updated',
+    lastUpdated: '上次更新',
     // 导航栏 nav
     nav: [
       {text: "Home", link: '/'},
