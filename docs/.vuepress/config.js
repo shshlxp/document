@@ -1,13 +1,9 @@
+const pluginConfig = require('../../config/pluginConf')
+const navConfig = require('../../config/navConf')
+const sidebarConfig = require('../../config/sidebarConf')
+
 module.exports = {
-  plugins: {
-    '@vuepress/pwa': {
-      serviceWorker: true,
-      updatePopup: {
-        message: "有新内容更新",
-        buttonText: "刷新"
-      }
-    }
-  },
+  plugins: pluginConfig,
   title: "SHSHLXP",
   description: 'SHSHLXP Guide 文档， VuePress 文档',
   locales: {
@@ -31,82 +27,8 @@ module.exports = {
     // 默认为 "Edit this page"
     editLinkText: '帮助我们改善此页面！',
     // 导航栏 nav
-    nav: [
-      { text: "Home", link: '/' },
-      {
-        text: 'HTML',
-        items: [
-          { text: 'html首页', link: '/guide/html/' },
-          { text: 'h1', link: '/guide/html/h1' },
-          { text: 'h2', link: '/guide/html/h2' },
-          { text: 'h3', link: '/guide/html/h3' },
-        ]
-      },
-      {
-        text: 'CSS',
-        items: [
-          { text: 'css首页', link: '/guide/css/' },
-          { text: 'c1', link: '/guide/css/c1' },
-          { text: 'c2', link: '/guide/css/c2' },
-          { text: 'c3', link: '/guide/css/c3' },
-        ]
-      },
-      {
-        text: 'Javascript',
-        items: [
-          { text: 'javascript首页', link: '/guide/javascript/' },
-          { text: 'j1', link: '/guide/javascript/j1' },
-          { text: 'j2', link: '/guide/javascript/j2' },
-          { text: 'j3', link: '/guide/javascript/j3' },
-        ]
-      },
-      {
-        text: "Languages",
-        items: [
-          { text: '中文', link: '/lang/zh-cn/' },
-          { text: '英文', link: '/lang/en-us/' },
-          {
-            text: '亚洲',
-            items: [
-              { text: '日本', link: '/lang/jp/' },
-              { text: '简体中文', link: '/lang/zh-cn/' },
-            ]
-          }
-        ]
-      },
-      { text: "External", link: 'https://www.chixm.com' },
-    ],
+    nav: navConfig,
     // 侧边栏 sidebar
-    sidebar: {
-      '/guide/': [
-        {
-          title: 'HTML',
-          collapsable: false,
-          children: [
-            'html/h1',
-            'html/h2',
-            'html/h3',
-          ]
-        },
-        {
-          title: 'CSS',
-          collapsable: false,
-          children: [
-            'css/c1',
-            'css/c2',
-            'css/c3',
-          ]
-        },
-        {
-          title: 'Javascript',
-          collapsable: false,
-          children: [
-            'javascript/j1',
-            'javascript/j2',
-            'javascript/j3',
-          ]
-        }
-      ]
-    }
+    sidebar: sidebarConfig
   }
 }
