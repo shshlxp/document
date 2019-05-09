@@ -21,14 +21,6 @@ module.exports = {
     nav: [
       {text: "Home", link: '/'},
       {
-        text: "Settings", 
-        items: [
-          {text: '设置', link: '/setting/'},
-          {text: '默认设置', link: '/setting/default/'},
-          {text: '默认设置1', link: '/setting/default/d1'}
-        ]
-      },
-      {
         text: 'HTML',
         items: [
           {text: 'html首页', link: '/guide/html/'},
@@ -58,13 +50,13 @@ module.exports = {
       {
         text: "Languages", 
         items: [
-          {text: '中文', link: '/lang/zh-cn'},
-          {text: '英文', link: '/lang/en-us'},
+          {text: '中文', link: '/lang/zh-cn/'},
+          {text: '英文', link: '/lang/en-us/'},
           {
             text: '亚洲', 
             items: [
-              {text: '文本', link: 'lang/jp'},
-              {text: '简体中文', link: 'lang/zh-cn'},
+              {text: '日本', link: '/lang/jp/'},
+              {text: '简体中文', link: '/lang/zh-cn/'},
             ]
           }
         ]
