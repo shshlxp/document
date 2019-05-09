@@ -13,6 +13,8 @@ module.exports = {
   themeConfig: {
     lastUpdated: '上次更新',
     repo: 'shshlxp/document',
+    // 假如文档不是放在仓库的根目录下：
+    docsDir: 'docs',
     // 默认是 false, 设置为 true 来启用
     editLinks: true,
     // 默认为 "Edit this page"
