@@ -3,15 +3,7 @@
 </template>
 
 <script>
-if (typeof window !== "undefined") {
-  // Register AV objects to the global
-  window.AV = require("leancloud-storage");
-}
 
-// Use import
-// import Valine from "valine";
-// or Use require
-const Valine = require('valine');
 
 export default {
   mounted() {
@@ -19,6 +11,12 @@ export default {
   },
   methods: {
     doValine() {
+      if (typeof window !== "undefined") {
+        this.window = window;
+        // Register AV objects to the global
+        window.AV = require("leancloud-storage");
+      }
+      const Valine = require("valine");
       new Valine({
         el: "#vcomments",
         appId: "LGla3zr8cSUeLWj3DQ6tlCjo-gzGzoHsz",
