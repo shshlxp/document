@@ -1,6 +1,5 @@
 module.exports = {
   '/about/': [
-    // ''  /* /about/ */
     {
       title: 'about',
       collapsable: false,
@@ -37,5 +36,8 @@ module.exports = {
         'javascript/j3',
       ]
     }
+  ],
+  '/': [
+    '',        /* / */
   ]
 }
