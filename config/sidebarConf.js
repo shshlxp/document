@@ -1,12 +1,6 @@
 module.exports = {
   '/about/': [
-    {
-      title: 'about',
-      collapsable: false,
-      children: [
-        'me/me'
-      ]
-    }
+    ''
   ],
   '/guide/': [
     {
