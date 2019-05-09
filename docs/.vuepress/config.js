@@ -78,7 +78,7 @@ module.exports = {
       '/guide/': [
         {
           title: 'HTML',
-          collapsable: true,
+          collapsable: false,
           children: [
             'html/h1',
             'html/h2',
@@ -87,7 +87,7 @@ module.exports = {
         },
         {
           title: 'CSS',
-          collapsable: true,
+          collapsable: false,
           children: [
             'css/c1',
             'css/c2',
@@ -96,7 +96,7 @@ module.exports = {
         },
         {
           title: 'Javascript',
-          collapsable: true,
+          collapsable: false,
           children: [
             'javascript/j1',
             'javascript/j2',
