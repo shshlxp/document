@@ -8,9 +8,17 @@ module.exports = {
   },
   // base: '/document/',
   head:[
-    ['link', {rel: 'icon', href: '/favicon.jpg'}]
+    ['link', {rel: 'icon', href: '/favicon.jpg'}],
+    ['link', {rel: 'manifest', href: '/manifest.json'}]
   ],
+  serviceWorker: true,
   themeConfig: {
+    serviceWorker: {
+      updatePopup: { 
+         message: "内容已更新", 
+         buttonText: "刷新" 
+      }
+    },
     lastUpdated: '上次更新',
     repo: 'shshlxp/document',
     // 假如文档不是放在仓库的根目录下：
