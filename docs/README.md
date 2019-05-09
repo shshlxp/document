@@ -1,8 +1,8 @@
 ---
 home: true
-heroText: Hero 标题
-tagline: Hero 副标题
-# heroImage: /hero.png
+heroText: 主标题
+tagline: 副标题
+heroImage: /logo.png
 actionText: 快速上手 →
 actionLink: /zh/guide/
 features:

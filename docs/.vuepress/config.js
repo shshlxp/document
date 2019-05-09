@@ -6,15 +6,28 @@ module.exports = {
       lang: 'zh-CN'
     }
   },
+  // base: '/document/',
   head:[
     ['link', {rel: 'icon', href: '/favicon.jpg'}]
   ],
   themeConfig: {
     lastUpdated: '上次更新',
+    repo: 'shshlxp/document',
+    // 默认是 false, 设置为 true 来启用
+    editLinks: true,
+    // 默认为 "Edit this page"
+    editLinkText: '帮助我们改善此页面！',
     // 导航栏 nav
     nav: [
       {text: "Home", link: '/'},
-      {text: "Settings", link: '/setting'},
+      {
+        text: "Settings", 
+        items: [
+          {text: '设置', link: '/setting/'},
+          {text: '默认设置', link: '/setting/default/'},
+          {text: '默认设置1', link: '/setting/default/d1'}
+        ]
+      },
       {
         text: 'HTML',
         items: [
@@ -56,7 +69,7 @@ module.exports = {
           }
         ]
       },
-      {text: "Realtive", link: 'https://www.chixm.com'},
+      {text: "External", link: 'https://www.chixm.com'},
     ],
     // 侧边栏 sidebar
     sidebar: {
