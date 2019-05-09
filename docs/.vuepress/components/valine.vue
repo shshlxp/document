@@ -9,9 +9,9 @@ if (typeof window !== "undefined") {
 }
 
 // Use import
-import Valine from "valine";
+// import Valine from "valine";
 // or Use require
-// const Valine = require('valine');
+const Valine = require('valine');
 
 export default {
   mounted() {
