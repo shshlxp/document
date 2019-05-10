@@ -1,6 +1,6 @@
 
 const utils = {
-  setSidebar: function (title, children = [''], collapsable = true, sidebarDepth = 2) {
+  setSidebar: function (title, children = [''], collapsable = true, sidebarDepth = 1) {
     var arr = new Array();
     arr.push({
       title,
@@ -8,6 +8,7 @@ const utils = {
       sidebarDepth,
       children
     })
+    console.log({arr: JSON.stringify(arr)})
     return arr;
   }
 };

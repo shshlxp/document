@@ -1,40 +1,18 @@
 module.exports = [
   {
-    text: 'HTML',
+    text: '编码规范',
     items: [
-      { text: 'HTML基础', link: '/guide/html/' },
-      { text: 'CSS基础', link: '/guide/css/' },
-      { text: 'Javascript基础', link: '/guide/javascript/' },
-      // { text: 'h1', link: '/guide/html/h1' },
-      // { text: 'h2', link: '/guide/html/h2' },
-      // { text: 'h3', link: '/guide/html/h3' },
+      { text: 'HTML', link: '/guide/html/1-html-syntax' },
+      { text: 'CSS', link: '/guide/css/1-css-syntax' },
+      { text: 'Javascript', link: '/guide/javascript/' },
     ]
   },
-  // {
-  //   text: 'CSS',
-  //   items: [
-  //     { text: 'css基础', link: '/guide/css/' },
-  //     // { text: 'c1', link: '/guide/css/c1' },
-  //     // { text: 'c2', link: '/guide/css/c2' },
-  //     // { text: 'c3', link: '/guide/css/c3' },
-  //   ]
-  // },
-  // {
-  //   text: 'Javascript',
-  //   items: [
-  //     { text: 'javascript基础', link: '/guide/javascript/' },
-  //     // { text: 'j1', link: '/guide/javascript/j1' },
-  //     // { text: 'j2', link: '/guide/javascript/j2' },
-  //     // { text: 'j3', link: '/guide/javascript/j3' },
-  //   ]
-  // },
   {
     text: "Languages",
     items: [
       { text: '简体中文', link: '/lang/zh-cn/' },
       { text: 'English', link: '/lang/en-us/' },
       {
-        // text: 'Other',
         items: [
           { text: '日本語', link: '/lang/ja/' },
           { text: '繁體中文', link: '/lang/zh-tw/' },

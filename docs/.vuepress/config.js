@@ -4,7 +4,7 @@ const sidebarConfig = require('../../config/sidebarConf')
 
 module.exports = {
   plugins: pluginConfig,
-  title: "SHSHLXP",
+  title: "VuePress",
   description: 'SHSHLXP Guide 文档， VuePress 文档',
   locales: {
     '/': {
@@ -18,7 +18,7 @@ module.exports = {
   ],
   serviceWorker: true,
   themeConfig: {
-    lastUpdated: '上次更新',
+    lastUpdated: '最后更新',
     repo: 'shshlxp/document',
     // 假如文档不是放在仓库的根目录下：
     docsDir: 'docs',

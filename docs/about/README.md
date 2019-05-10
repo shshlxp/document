@@ -1,5 +1,7 @@
 ---
 sidebar: false
+editLink: false
+lastUpdated: false
 ---
 
 # 关于我
@@ -30,4 +32,4 @@ sidebar: false
 │   │   ├── helper.js
 │   │   ├── index.js
 ```
-<valine></valine>
+<!-- <valine /> -->
