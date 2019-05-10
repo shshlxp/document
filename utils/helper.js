@@ -45,15 +45,15 @@ const sortFilenamesList = (arr, dir = 'asc') => {
   if (dir === "asc") {
     //升序
     for (var i = 1; i < arr.length; i++) {
-      let a = string2Number(stringSplit(arr[i]));
-      let b = string2Number(stringSplit(pivot));
+      let a = code2Number(stringSplit(arr[i]));
+      let b = code2Number(stringSplit(pivot));
       a < b ? left.push(arr[i]) : right.push(arr[i]);
     }
   } else {
     //降序
     for (var i = 1; i < arr.length; i++) {
-      let a = string2Number(stringSplit(arr[i]));
-      let b = string2Number(stringSplit(pivot));
+      let a = code2Number(stringSplit(arr[i]));
+      let b = code2Number(stringSplit(pivot));
       a > b ? left.push(arr[i]) : right.push(arr[i]);
     }
   }
@@ -62,14 +62,18 @@ const sortFilenamesList = (arr, dir = 'asc') => {
 
 /**
  * 编号转换成数字
- * @param str String
+ * @param str String | Number
  * @example:
- * string2Number('123') ===> 123
- * string2Number('1.23') ===> 1023
- * string2Number('1.2.3') ===> 10203
+ * code2Number(123) ===> 123
+ * code2Number('123') ===> 123
+ * code2Number('1.23') ===> 1023
+ * code2Number('1.2.3') ===> 10203
  */
-const string2Number = str => {
-  return Number(str.replace(/\./g, 0));
+const code2Number = val => {
+  if(typeof val === 'number')
+    return val
+  else
+    return Number(val.replace(/\./g, 0));
 }
 
 /**
