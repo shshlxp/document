@@ -1,37 +1,23 @@
-module.exports = {
-  '/about/': [
-    ''
-  ],
-  '/guide/': [
-    {
-      title: 'HTML',
-      collapsable: false,
-      children: [
-        'html/h1',
-        'html/h2',
-        'html/h3',
-      ]
-    },
-    {
-      title: 'CSS',
-      collapsable: false,
-      children: [
-        'css/c1',
-        'css/c2',
-        'css/c3',
-      ]
-    },
-    {
-      title: 'Javascript',
-      collapsable: false,
-      children: [
-        'javascript/j1',
-        'javascript/j2',
-        'javascript/j3',
-      ]
-    }
-  ],
-  '/': [
-    '',        /* / */
-  ]
-}
+const path = require("path")
+const rootpath = path.dirname(__dirname)
+const docs = rootpath+"/docs/"
+const utils = require(rootpath+'/utils/index.js');
+const helper = require(rootpath+'/utils/helper.js');
+
+/**
+ * 侧边栏的配置
+ */
+ module.exports = {
+     
+     // guide
+     '/guide/html/': utils.setSidebar('HTML', helper.getAllFilenamesByPath(docs + "/guide/html/"), false),
+     '/guide/css/': utils.setSidebar('CSS', helper.getAllFilenamesByPath(docs + "/guide/css/"), false),
+     '/guide/javascript/': utils.setSidebar('Javascript', helper.getAllFilenamesByPath(docs + "/guide/javascript/"), false),
+    //  lang
+     '/lang/zh-cn/': utils.setSidebar('中文', helper.getAllFilenamesByPath(docs + "/lang/zh-cn/"), false),
+     '/lang/en-us/': utils.setSidebar('英文', helper.getAllFilenamesByPath(docs + "/lang/en-us/"), false),
+     '/lang/ja/': utils.setSidebar('日文', helper.getAllFilenamesByPath(docs + "/lang/ja/"), false),
+
+     // 关于我
+     '/about/': utils.setSidebar('关于我', helper.getAllFilenamesByPath(docs + "/about/"), false)
+ };

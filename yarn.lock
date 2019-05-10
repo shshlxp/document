@@ -799,7 +799,6 @@
 "@vuepress/plugin-pwa@^1.0.0-alpha.47":
   version "1.0.0-alpha.47"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-pwa/-/plugin-pwa-1.0.0-alpha.47.tgz#6365e5cfda6f527ccc66f723d55ef3c2c3e34321"
-  integrity sha512-BI0xVWEAEWt4CsYndqh38m5biROb6TTUVS0ubuO5a5cfPdltLI/X/h8jOpAZO5RJKsUGHGJvDCWrlkT5Bamnww==
   dependencies:
     "@vuepress/shared-utils" "^1.0.0-alpha.47"
     register-service-worker "^1.5.2"
@@ -1140,7 +1139,6 @@ arrify@^1.0.1:
 ascli@~1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/ascli/-/ascli-1.0.1.tgz#bcfa5974a62f18e81cabaeb49732ab4a88f906bc"
-  integrity sha1-vPpZdKYvGOgcq660lzKrSoj5Brw=
   dependencies:
     colour "~0.7.1"
     optjs "~3.2.2"
@@ -1181,7 +1179,6 @@ async-each@^1.0.1:
 async-limiter@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/async-limiter/-/async-limiter-1.0.0.tgz#78faed8c3d074ab81f22b4e985d79e8738f720f8"
-  integrity sha512-jp/uFnooOiO+L211eZOoSyzpOITMXx1rBITauYykG3BRYPu8h0UcxsPNB04RR5vo4Tyz3+ay17tR6JVf9qzYWg==
 
 async@^1.5.2:
   version "1.5.2"
@@ -1234,7 +1231,6 @@ aws4@^1.8.0:
 axios@^0.18.0:
   version "0.18.0"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.18.0.tgz#32d53e4851efdc0a11993b6cd000789d70c05102"
-  integrity sha1-MtU+SFHv3AoRmTts0AB4nXDAUQI=
   dependencies:
     follow-redirects "^1.3.0"
     is-buffer "^1.1.5"
@@ -1311,7 +1307,6 @@ balanced-match@^1.0.0:
 base64-arraybuffer@^0.1.5:
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/base64-arraybuffer/-/base64-arraybuffer-0.1.5.tgz#73926771923b5a19747ad666aa5cd4bf9c6e9ce8"
-  integrity sha1-c5JncZI7Whl0etZmqlzUv5xunOg=
 
 base64-js@^1.0.2:
   version "1.3.0"
@@ -1517,7 +1512,6 @@ builtin-status-codes@^3.0.0:
 bytebuffer@~5:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/bytebuffer/-/bytebuffer-5.0.1.tgz#582eea4b1a873b6d020a48d58df85f0bba6cfddd"
-  integrity sha1-WC7qSxqHO20CCkjVjfhfC7ps/d0=
   dependencies:
     long "~3"
 
@@ -1619,7 +1613,6 @@ camel-case@3.0.x:
 camelcase@^2.0.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-2.1.1.tgz#7c1d16d679a1bbe59ca02cacecfb011e201f5a1f"
-  integrity sha1-fB0W1nmhu+WcoCys7PsBHiAfWh8=
 
 camelcase@^5.0.0:
   version "5.3.1"
@@ -1676,7 +1669,6 @@ chalk@^2.0.0, chalk@^2.1.0, chalk@^2.3.2, chalk@^2.4.1, chalk@^2.4.2:
 charenc@~0.0.1:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/charenc/-/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
-  integrity sha1-wKHS86cJLgN3S/qD8UwPxXkKhmc=
 
 chokidar@^2.0.2, chokidar@^2.0.3, chokidar@^2.1.5:
   version "2.1.5"
@@ -1755,7 +1747,6 @@ clipboard@^2.0.0:
 cliui@^3.0.3:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/cliui/-/cliui-3.2.0.tgz#120601537a916d29940f934da3b48d585a39213d"
-  integrity sha1-EgYBU3qRbSmUD5NNo7SNWFo5IT0=
   dependencies:
     string-width "^1.0.1"
     strip-ansi "^3.0.1"
@@ -1855,7 +1846,6 @@ colors@~1.1.2:
 colour@~0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/colour/-/colour-0.7.1.tgz#9cb169917ec5d12c0736d3e8685746df1cadf778"
-  integrity sha1-nLFpkX7F0SwHNtPoaFdG3xyt93g=
 
 combined-stream@^1.0.6, combined-stream@~1.0.6:
   version "1.0.7"
@@ -1976,7 +1966,6 @@ cookie@0.3.1:
 cookiejar@^2.1.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/cookiejar/-/cookiejar-2.1.2.tgz#dd8a235530752f988f9a0844f3fc589e3111125c"
-  integrity sha512-Mw+adcfzPxcPeI+0WlvRrr/3lGVO0bD75SxX6811cxSh1Wbxx7xZBGK1eVtDf6si8rg2lhnUjsVLMFMfbRIuwA==
 
 copy-concurrently@^1.0.0:
   version "1.0.5"
@@ -2073,7 +2062,6 @@ cross-spawn@^6.0.0, cross-spawn@^6.0.5:
 crypt@~0.0.1:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/crypt/-/crypt-0.0.2.tgz#88d7ff7ec0dfb86f713dc87bbb42d044d3e6c41b"
-  integrity sha1-iNf/fsDfuG9xPch7u0LQRNPmxBs=
 
 crypto-browserify@^3.11.0:
   version "3.12.0"
@@ -2648,7 +2636,6 @@ es-to-primitive@^1.2.0:
 es6-promise@4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.2.3.tgz#29454b8db21b73fbef1df070c35dc09b7fd606c4"
-  integrity sha512-vLf5iali3jKqlJoo6SryDwe3nxCmiueNjbjLWDIpNbAcKnQXAsAdZk+pM17nSYp3AQMbTmAQVCQSeDLfA87SNA==
 
 es6-promise@^4.1.0:
   version "4.2.6"
@@ -2698,7 +2685,6 @@ etag@~1.8.1:
 eventemitter3@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-2.0.3.tgz#b5e1079b59fb5e1ba2771c0a993be060a58c99ba"
-  integrity sha1-teEHm1n7XhuidxwKmTvgYKWMmbo=
 
 eventemitter3@^3.0.0:
   version "3.1.2"
@@ -2970,7 +2956,6 @@ form-data@^2.3.1, form-data@~2.3.2:
 formidable@^1.2.0:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/formidable/-/formidable-1.2.1.tgz#70fb7ca0290ee6ff961090415f4b3df3d2082659"
-  integrity sha512-Fs9VRguL0gqGHkXS5GQiMCr1VhZBxz0JnJs4JmMp/2jL18Fmbzvv7vOFRU+U8TBkHEE/CX1qDXzJplVULgsLeg==
 
 forwarded@~0.1.2:
   version "0.1.2"
@@ -3502,7 +3487,6 @@ invariant@^2.2.2:
 invert-kv@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/invert-kv/-/invert-kv-1.0.0.tgz#104a8e4aaca6d3d8cd157a8ef8bfab2d7a3ffdb6"
-  integrity sha1-EEqOSqym09jNFXqO+L+rLXo//bY=
 
 invert-kv@^2.0.0:
   version "2.0.0"
@@ -3766,7 +3750,6 @@ isstream@~0.1.2:
 javascript-state-machine@^2.3.5:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/javascript-state-machine/-/javascript-state-machine-2.4.0.tgz#d8be31ec38f24ac1a1832f0b672fc3cd5f79c96e"
-  integrity sha1-2L4x7DjySsGhgy8LZy/DzV95yW4=
 
 javascript-stringify@^1.6.0:
   version "1.6.0"
@@ -3907,7 +3890,6 @@ last-call-webpack-plugin@^3.0.0:
 lcid@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/lcid/-/lcid-1.0.0.tgz#308accafa0bc483a3867b4b6f2b9506251d1b835"
-  integrity sha1-MIrMr6C8SDo4Z7S28rlQYlHRuDU=
   dependencies:
     invert-kv "^1.0.0"
 
@@ -3920,12 +3902,10 @@ lcid@^2.0.0:
 leancloud-realtime-plugin-live-query@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/leancloud-realtime-plugin-live-query/-/leancloud-realtime-plugin-live-query-1.1.2.tgz#16c4ba1babe0b907bcf63c4ec85462a0ab349662"
-  integrity sha512-p4Z1bVlRE/Xh2z12KIbnlGdKibYJXeO+pKAIPoC81pAWpelKcBzIqzLBjeO8LmChgriWBvEnaHFH2KrH4HVRpQ==
 
 leancloud-realtime@^4.2.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/leancloud-realtime/-/leancloud-realtime-4.3.0.tgz#383e7958ec082fb7918dff800651300497febb7a"
-  integrity sha512-cPw/O3jkOy4ioyX1MQgsJaDxQzv1t2AVa+avex5CWWj65NRPpTLMukVcnm101Pc3TIben10xCbCzqz+SSUkPnA==
   dependencies:
     axios "^0.18.0"
     babel-runtime "^6.6.1"
@@ -3941,7 +3921,6 @@ leancloud-realtime@^4.2.0:
 leancloud-storage@^3.13.1:
   version "3.13.1"
   resolved "https://registry.yarnpkg.com/leancloud-storage/-/leancloud-storage-3.13.1.tgz#b74d54909523d30b843b39997408b7de73e43528"
-  integrity sha512-/pZr5c4r0rEMEfGKlwEtMboMJKHpBANLCTsMt1eUulIhv23bYP5oEBmhT3x6Kzv/I+HB76tXyjvEfH3vZ7ko/w==
   dependencies:
     debug "^3.1.0"
     es6-promise "4.2.3"
@@ -3988,7 +3967,6 @@ loader-utils@^1.0.2, loader-utils@^1.1.0:
 localstorage-memory@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/localstorage-memory/-/localstorage-memory-1.0.3.tgz#566b37968fe0c4d76ba36a6da564fa613945ca72"
-  integrity sha512-t9P8WB6DcVttbw/W4PIE8HOqum8Qlvx5SjR6oInwR9Uia0EEmyUeBh7S+weKByW+l/f45Bj4L/dgZikGFDM6ng==
 
 locate-path@^2.0.0:
   version "2.0.0"
@@ -4064,7 +4042,6 @@ loglevel@^1.6.1:
 long@~3:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/long/-/long-3.2.0.tgz#d821b7138ca1cb581c172990ef14db200b5c474b"
-  integrity sha1-2CG3E4yhy1gcFymQ7xTbIAtcR0s=
 
 loose-envify@^1.0.0:
   version "1.4.0"
@@ -4165,7 +4142,6 @@ md5.js@^1.3.4:
 md5@^2.0.0:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/md5/-/md5-2.2.1.tgz#53ab38d5fe3c8891ba465329ea23fac0540126f9"
-  integrity sha1-U6s41f48iJG6RlMp6iP6wFQBJvk=
   dependencies:
     charenc "~0.0.1"
     crypt "~0.0.1"
@@ -4258,7 +4234,6 @@ mime@1.4.1:
 mime@^1.4.1:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
-  integrity sha512-x0Vn8spI+wuJ1O6S7gnbaQg8Pxh4NNHb7KSINmEWKiPE4RKOplvijn+NkmYmmRgP68mc70j2EbeTFRsrswaQeg==
 
 mime@^2.0.3, mime@^2.3.1:
   version "2.4.2"
@@ -4680,7 +4655,6 @@ optimize-css-assets-webpack-plugin@^5.0.1:
 optjs@~3.2.2:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/optjs/-/optjs-3.2.2.tgz#69a6ce89c442a44403141ad2f9b370bd5bb6f4ee"
-  integrity sha1-aabOicRCpEQDFBrS+bNwvVu29O4=
 
 original@^1.0.0:
   version "1.0.2"
@@ -4699,7 +4673,6 @@ os-homedir@^1.0.0:
 os-locale@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/os-locale/-/os-locale-1.4.0.tgz#20f9f17ae29ed345e8bde583b13d2009803c14d9"
-  integrity sha1-IPnxeuKe00XoveWDsT0gCYA8FNk=
   dependencies:
     lcid "^1.0.0"
 
@@ -5482,7 +5455,6 @@ promise-inflight@^1.0.1:
 protobufjs@^5.0.1:
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/protobufjs/-/protobufjs-5.0.3.tgz#e4dfe9fb67c90b2630d15868249bcc4961467a17"
-  integrity sha512-55Kcx1MhPZX0zTbVosMQEO5R6/rikNXd9b6RQK4KSPcrSIIwoXTtebIczUrXlwaSrbz4x8XUVThGPob1n8I4QA==
   dependencies:
     ascli "~1"
     bytebuffer "~5"
@@ -5564,7 +5536,6 @@ qs@6.5.2, qs@~6.5.2:
 qs@^6.5.1:
   version "6.7.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
-  integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
 
 query-string@^4.1.0:
   version "4.3.4"
@@ -6359,7 +6330,6 @@ stylus@^0.54.5:
 superagent@^3.3.1:
   version "3.8.3"
   resolved "https://registry.yarnpkg.com/superagent/-/superagent-3.8.3.tgz#460ea0dbdb7d5b11bc4f78deba565f86a178e128"
-  integrity sha512-GLQtLMCoEIK4eDv6OGtkOoSMt3D+oq0y3dsxMuYuDvaNUvuT8eFBuLmfR0iYYzHC1e8hpzC6ZsxbuP6DIalMFA==
   dependencies:
     component-emitter "^1.2.0"
     cookiejar "^2.1.0"
@@ -6608,7 +6578,6 @@ uglify-js@3.4.x:
 underscore@^1.8.3:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.9.1.tgz#06dce34a0e68a7babc29b365b8e74b8925203961"
-  integrity sha512-5/4etnCkd9c8gwgowi5/om/mYO5ajCaOgdzj/oW+0eQV9WxKBDZw5+ycmKmeaTXjInS/W0BzpGLo2xR2aBwZdg==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
@@ -6758,8 +6727,7 @@ uuid@^3.0.0, uuid@^3.0.1, uuid@^3.3.2:
 
 valine@^1.3.6:
   version "1.3.6"
-  resolved "https://registry.yarnpkg.com/valine/-/valine-1.3.6.tgz#e39ba279a63eaf7c03fcbb23766226d03909b0cc"
-  integrity sha512-DVdbzyVXvDRqN7dAprXUpSvfJaFrA+WDxH44SR+X9Gc22xx5RCLsk8SLClcb1TPE5m1P/HoqCvoSeOcPu4Ra/A==
+  resolved "https://registry.npm.taobao.org/valine/download/valine-1.3.6.tgz#e39ba279a63eaf7c03fcbb23766226d03909b0cc"
 
 vary@~1.1.2:
   version "1.1.2"
@@ -6857,7 +6825,6 @@ vuepress-plugin-container@^2.0.0:
 vuepress@^1.0.0-alpha.47:
   version "1.0.0-alpha.47"
   resolved "https://registry.yarnpkg.com/vuepress/-/vuepress-1.0.0-alpha.47.tgz#b6f06a5569aaf0b4016f9eb1da5fd4e01f295d45"
-  integrity sha512-AxvDNsT1Cj7ZrVSR4pKtCDD4DYQOTMWtUkBcRDAuSzBIJfjOjdrW6FY/G27SrKHA7cKhVXzxBiHYmXysIpfPjw==
   dependencies:
     "@vuepress/core" "^1.0.0-alpha.47"
     "@vuepress/theme-default" "^1.0.0-alpha.47"
@@ -7030,7 +6997,6 @@ wide-align@^1.1.0:
 window-size@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/window-size/-/window-size-0.1.4.tgz#f8e1aa1ee5a53ec5bf151ffa09742a6ad7697876"
-  integrity sha1-+OGqHuWlPsW/FR/6CXQqatdpeHY=
 
 workbox-background-sync@^3.6.3:
   version "3.6.3"
@@ -7163,7 +7129,6 @@ wrappy@1:
 ws@^5.2.1:
   version "5.2.2"
   resolved "https://registry.yarnpkg.com/ws/-/ws-5.2.2.tgz#dffef14866b8e8dc9133582514d1befaf96e980f"
-  integrity sha512-jaHFD6PFv6UgoIVda6qZllptQsMlDEJkTQcybzzXDYM1XO9Y8em691FGMPmM46WGyLU4z9KMgQN+qrux/nhlHA==
   dependencies:
     async-limiter "~1.0.0"
 
@@ -7174,7 +7139,6 @@ xtend@^4.0.0, xtend@~4.0.1:
 y18n@^3.2.0:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
-  integrity sha1-bRX7qITAhnnA136I53WegR4H+kE=
 
 "y18n@^3.2.1 || ^4.0.0", y18n@^4.0.0:
   version "4.0.0"
@@ -7215,7 +7179,6 @@ yargs@12.0.5:
 yargs@^3.10.0:
   version "3.32.0"
   resolved "https://registry.yarnpkg.com/yargs/-/yargs-3.32.0.tgz#03088e9ebf9e756b69751611d2a5ef591482c995"
-  integrity sha1-AwiOnr+edWtpdRYR0qXvWRSCyZU=
   dependencies:
     camelcase "^2.0.1"
     cliui "^3.0.3"
