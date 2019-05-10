@@ -4,6 +4,7 @@
 
 <script>
 
+import sk from '../secretKey/valueKey.js';
 
 export default {
   mounted() {
@@ -19,8 +20,8 @@ export default {
       const Valine = require("valine");
       new Valine({
         el: "#vcomments",
-        appId: "LGla3zr8cSUeLWj3DQ6tlCjo-gzGzoHsz",
-        appKey: "DFVKPXlHIQ0K5GSbrbwyfMdl",
+        appId: sk.appId,
+        appKey: sk.appKey,
         notify: false,
         verify: false,
         avatar: "",
