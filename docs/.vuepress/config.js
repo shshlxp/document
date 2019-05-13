@@ -54,41 +54,8 @@ module.exports = {
             },
           ]
         }
-      ]
-    },
-    // sidebar: [
-    //   {
-    //     title: '指南',   // 必要的
-    //     collapsable: false, // 可选的, 默认值是 true,
-    //     sidebarDepth: 1,    // 可选的, 默认值是 1
-    //     children: [
-    //       {
-    //         path: '/guide/vuepress/',
-    //         title: '介绍',
-    //         sidebarDepth: 1, 
-    //       },
-    //       {
-    //         path: '/guide/vuepress/getting-started',
-    //         title: '快速上手',
-    //         sidebarDepth: 1, 
-    //       },
-    //       {
-    //         path: '/guide/vuepress/directory-structure',
-    //         title: '目录结构',
-    //         sidebarDepth: 1, 
-    //       },
-    //     ]
-    //   },
-    //   // {
-    //   //   title: 'Markdown',   // 必要的
-    //   //   collapsable: false, // 可选的, 默认值是 true,
-    //   //   sidebarDepth: 1,    // 可选的, 默认值是 1
-    //   //   children: [
-    //   //     '/guide/markdown/m1',
-    //   //     '/guide/markdown/m2',
-    //   //     '/guide/markdown/m3',
-    //   //   ]
-    //   // },
-    // ]
+      ],
+      ...sidebarConfig
+    }
   }
 }
