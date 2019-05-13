@@ -12,7 +12,7 @@ const helper = require(rootpath+'/utils/helper.js');
      // guide
      '/guide/html/': utils.setSidebar('HTML', helper.getAllFilenamesByPath(docs + "/guide/html/"), false),
      '/guide/css/': utils.setSidebar('CSS', helper.getAllFilenamesByPath(docs + "/guide/css/"), false),
-     '/guide/javascript/': utils.setSidebar('Javascript', helper.getAllFilenamesByPath(docs + "/guide/javascript/"), false),
+     '/guide/vuepress/': utils.setSidebar('Javascript', helper.getAllFilenamesByPath(docs + "/guide/vuepress/"), false),
     //  lang
      '/lang/zh-cn/': utils.setSidebar('中文', helper.getAllFilenamesByPath(docs + "/lang/zh-cn/"), false),
      '/lang/en-us/': utils.setSidebar('英文', helper.getAllFilenamesByPath(docs + "/lang/en-us/"), false),

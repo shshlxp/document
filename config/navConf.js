@@ -4,9 +4,10 @@ module.exports = [
     items: [
       { text: 'HTML', link: '/guide/html/1-html-syntax' },
       { text: 'CSS', link: '/guide/css/1-css-syntax' },
-      { text: 'Javascript', link: '/guide/javascript/' },
     ]
   },
+  { text: 'Markdown', link: '/guide/markdown/' },
+  { text: 'VuePress', link: '/guide/vuepress/' },
   {
     text: "Languages",
     items: [

@@ -24,6 +24,7 @@
   "description": "",
   "devDependencies": {
     "@vuepress/plugin-pwa": "^1.0.0-alpha.47",
+    "serve": "^11.0.0",
     "vuepress": "^1.0.0-alpha.47"
   },
   "dependencies": {
