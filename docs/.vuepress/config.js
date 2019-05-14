@@ -12,6 +12,9 @@ module.exports = {
       lang: 'zh-CN'
     }
   },
+  markdown: {
+    lineNumbers: true
+  },
   // base: '/document/',
   head: [
     ['link', { rel: 'icon', href: '/favicon.jpg' }],
@@ -35,22 +38,27 @@ module.exports = {
         {
           title: '指南',   // 必要的
           collapsable: false, // 可选的, 默认值是 true,
-          sidebarDepth: 1,    // 可选的, 默认值是 1
+          sidebarDepth: 2,    // 可选的, 默认值是 1
           children: [
             {
               path: '/guide/vuepress/',
               title: '介绍',
-              sidebarDepth: 1,
+              sidebarDepth: 2,
             },
             {
               path: '/guide/vuepress/getting-started',
               title: '快速上手',
-              sidebarDepth: 1,
+              sidebarDepth: 2,
             },
             {
               path: '/guide/vuepress/directory-structure',
               title: '目录结构',
-              sidebarDepth: 1,
+              sidebarDepth: 2,
+            },
+            {
+              path: '/guide/vuepress/default-theme-config',
+              title: '默认主题配置',
+              sidebarDepth: 2,
             },
           ]
         }
