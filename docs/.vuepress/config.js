@@ -13,7 +13,10 @@ module.exports = {
     }
   },
   markdown: {
-    lineNumbers: true
+    lineNumbers: true,
+    toc: {
+      includeLevel: [2, 3]
+    }
   },
   // base: '/document/',
   head: [
@@ -64,6 +67,35 @@ module.exports = {
               path: '/guide/vuepress/deploy',
               title: '部署',
               sidebarDepth: 2,
+            },
+          ]
+        }
+      ],
+      "/guide/markdown/": [
+        {
+          title: '指南',   // 必要的
+          collapsable: false, // 可选的, 默认值是 true,
+          sidebarDepth: 1,    // 可选的, 默认值是 1
+          children: [
+            {
+              path: '/guide/markdown/',
+              title: '概述',
+              sidebarDepth: 1,
+            },
+            {
+              path: '/guide/markdown/basic',
+              title: '基础用法',
+              sidebarDepth: 1,
+            },
+            {
+              path: '/guide/markdown/markdown',
+              title: 'Markdown拓展',
+              sidebarDepth: 1,
+            },
+            {
+              path: '/guide/markdown/using-vue',
+              title: '在Markdown中使用Vue',
+              sidebarDepth: 1,
             },
           ]
         }
