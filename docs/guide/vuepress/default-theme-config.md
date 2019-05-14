@@ -327,7 +327,7 @@ module.exports = {
 
 ## Service Worker
 
-### pwa
+### PWA
 
 #### 安装
 
@@ -355,8 +355,46 @@ module.exports = {
 }
 ```
 
+::: tip 提示
+关于PWA [Progressive web apps](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
+:::
 
 `themeConfig.serviceWorker` 允许你去配置 Service Worker。
+
+#### 配置 Manifest
+
+```js
+module.exports = {
+  head: [
+    // 引入doc/.vuepress/public/manifest.json 文件
+      ['link', { rel: 'manifest', href: '/manifest.json' }] 
+    ]
+}
+```
+
+manifest.json内容如下:
+
+```json
+{
+  "name": "shshlxp",
+  "short_name": "lxp",
+  "description": "VuePress文档",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    }
+  ],
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "start_url": "index.html"
+}
+```
+
+::: tip 提示
+更多关于Manifest详情 [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest)
+:::
 
 ::: tip 提示
 请不要将本选项与 `Config > serviceWorker` 混淆，`Config > serviceWorker` 是网站级别的配置，而本选项是主题级别的配置
@@ -364,7 +402,7 @@ module.exports = {
 
 ### 刷新内容的弹窗 <Badge text="0.13.0+" /> <Badge text="beta" type="warning" />
 
-开启 `themeConfig.serviceWorker.updatePopup` 选项，将开启一个能够刷新内容的弹窗。当网站更新（即 Service Worker 更新）时，它会提供一个 `refresh` 按钮，允许用户立刻刷新内容。
+开启 `plugins.@vuepress/pwa.updatePopup` 选项，将开启一个能够刷新内容的弹窗。当网站更新（即 Service Worker 更新）时，它会提供一个 `refresh` 按钮，允许用户立刻刷新内容。
 
 ::: tip 提示
 如果没有 `refresh` 按钮，新的 `service worker` 将在所有的 [clients](/) 关闭后才会处于活动状态。这意味着访问者在关闭你网站的所有标签之前将无法看到新内容。但是，`refresh` 按钮可以立即激活新的 Service Worker。
@@ -406,3 +444,4 @@ module.exports = {
 editLink: false
 ---
 ```
+

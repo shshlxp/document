@@ -8,7 +8,6 @@ const utils = {
       sidebarDepth,
       children
     })
-    console.log({arr: JSON.stringify(arr)})
     return arr;
   }
 };

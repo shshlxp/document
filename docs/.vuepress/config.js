@@ -3,7 +3,7 @@ const navConfig = require('../../config/navConf')
 const sidebarConfig = require('../../config/sidebarConf')
 
 module.exports = {
-  // plugins: pluginConfig,
+  plugins: pluginConfig,
   title: "VuePress",
   port: 3333,
   description: 'SHSHLXP Guide 文档， VuePress 文档',
@@ -58,6 +58,11 @@ module.exports = {
             {
               path: '/guide/vuepress/default-theme-config',
               title: '默认主题配置',
+              sidebarDepth: 2,
+            },
+            {
+              path: '/guide/vuepress/deploy',
+              title: '部署',
               sidebarDepth: 2,
             },
           ]
