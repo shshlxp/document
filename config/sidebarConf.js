@@ -11,6 +11,7 @@ const sidebarListInfo = [
   {title: '关于我', path: '/about/'},
   {title: 'Markdown', path: '/guide/markdown/'},
   {title: 'VuePress', path: '/guide/vuepress/',  sidebarDepth: 2},
+  {title: 'Javascript', path: '/guide/javascript/'},
 ]
 
 const setSidebarConfig = (config) => {

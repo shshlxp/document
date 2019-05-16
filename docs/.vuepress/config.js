@@ -3,7 +3,7 @@ const navConfig = require('../../config/navConf')
 const sidebarConfig = require('../../config/sidebarConf')
 
 module.exports = {
-  // plugins: pluginConfig,
+  plugins: pluginConfig,
   title: "文档编写",
   port: 3333,
   description: 'Markdown 文档， VuePress 文档',
@@ -14,9 +14,6 @@ module.exports = {
   },
   markdown: {
     lineNumbers: true,
-    // toc: {
-    //   includeLevel: [2, 3]
-    // }
   },
   // base: '/document/',
   head: [
@@ -37,7 +34,8 @@ module.exports = {
     nav: navConfig,
     // 侧边栏 sidebar
     sidebar: {
-      ...sidebarConfig
+      ...sidebarConfig,
+      
     }
   }
 }

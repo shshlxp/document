@@ -2,8 +2,9 @@ module.exports = [
   {
     text: '编码规范',
     items: [
-      { text: 'HTML', link: '/guide/html/1-html-syntax' },
-      { text: 'CSS', link: '/guide/css/1-css-syntax' },
+      { text: 'HTML', link: '/guide/html/1-语法' },
+      { text: 'CSS', link: '/guide/css/1-语法' },
+      { text: 'Javascript', link: '/guide/javascript/' },
     ]
   },
   { text: 'Markdown', link: '/guide/markdown/' },
