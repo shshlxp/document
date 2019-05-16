@@ -1,26 +1,46 @@
 const fs = require("fs");
-// 排除检查的文件
-var excludes = [];
+const path = require("path")
+const rootpath = path.dirname(__dirname)
+const buildPath = rootpath + "\\docs\\"
+const README_TITLE = "指南"
 
-var helper = {
-  // 获取该路径下的所有文件
-  getAllFilenamesByPath: function(targetPath) {
-    let names = [];
-    fs.readdirSync(targetPath).forEach(file => {
-      if (excludes.indexOf(file) === -1) {
-        fullPath = targetPath + "/" + file;
-        var fileStatus = fs.statSync(fullPath);
+// 排除检查的文件
+const excludes = []
+
+const helper = {
+  // 获取该路径下的所有文件作为children配置
+  setSidebarChildren: function(relPath) {
+    let names = []; // [, options]
+    let targetPath = path.join(buildPath, relPath)
+    const sortedFilesList = sortFilenamesList(fs.readdirSync(targetPath))
+    sortedFilesList.forEach(file => {
+      if (-1 === excludes.indexOf(file)) {
+        const fileFullPath = targetPath + file;
+        const fileStatus = fs.statSync(fileFullPath);
+        const childrenConf = {}
         if (fileStatus.isFile()) {
-          if (file === "README.md") {
-            file = "";
+          if ("README.md" === file) {
+            childrenConf["title"] = README_TITLE
+            childrenConf["path"] = relPath
           } else {
-            file = file.replace(".md", "");
+            childrenConf["path"] = removeExt(file)
+            childrenConf["title"] = stringSplit(removeExt(file), "other")
           }
-          names.push(file);
+          names.push(childrenConf)
         }
       }
     });
-    return sortFilenamesList(names)
+    return names
+  },
+  setSidebar: function(title, relPath, collapsable = false, sidebarDepth = 1) {
+    const arr = []
+    arr.push({
+      title,
+      collapsable,
+      sidebarDepth,
+      children: this.setSidebarChildren(relPath)
+    })
+    return arr
   }
 };
 
@@ -31,27 +51,26 @@ var helper = {
  * @param dir asc升序、desc降序
  *
  * @example:
- * sort(['1-xx','4-xx','2-xx','5-xx'])
- * sort(['1-xx','4-xx','2-xx','5-xx'],'asc')
- * sort(['1-xx','4-xx','2-xx','5-xx'],'desc')
+ * sortFilenamesList(['1-xx','4-xx','2-xx','5-xx'])
+ * sortFilenamesList(['1-xx','4-xx','2-xx','5-xx'],'asc')
+ * sortFilenamesList(['1-xx','4-xx','2-xx','5-xx'],'desc')
  */
 const sortFilenamesList = (arr, dir = 'asc') => {
-  if (arr.length == 0) return [];
-
-  var left = new Array();
-  var right = new Array();
-  var pivot = arr[0];
-
-  if (dir === "asc") {
+  let arrLen = arr.length;
+  if (!arrLen) return [];
+  let left = new Array();
+  let right = new Array();
+  let pivot = arr[0];
+  if ("asc" === dir) {
     //升序
-    for (var i = 1; i < arr.length; i++) {
+    for (let i = 1; i < arrLen; i++) {
       let a = code2Number(stringSplit(arr[i]));
       let b = code2Number(stringSplit(pivot));
       a < b ? left.push(arr[i]) : right.push(arr[i]);
     }
   } else {
     //降序
-    for (var i = 1; i < arr.length; i++) {
+    for (let i = 1; i < arrLen; i++) {
       let a = code2Number(stringSplit(arr[i]));
       let b = code2Number(stringSplit(pivot));
       a > b ? left.push(arr[i]) : right.push(arr[i]);
@@ -70,20 +89,43 @@ const sortFilenamesList = (arr, dir = 'asc') => {
  * code2Number('1.2.3') ===> 10203
  */
 const code2Number = val => {
-  if(typeof val === 'number')
+  if('number' === typeof val)
     return val
   else
     return Number(val.replace(/\./g, 0));
 }
 
 /**
- * 取切割到分隔符的第一部分
+ * 取分隔符切割的部分字符
  * @param str String
  * @example:
- * stringSplit('123-xx') ===> 123
+ * stringSplit('123-xx-abc') ===> 123
+ * stringSplit('123-xx-abc', "1") ===> xx
+ * stringSplit('123-xx-abc', "2") ===> abc
+ * stringSplit('123-xx-abc', "other") ===> xx-abc
  */
-const stringSplit = (str, separator = '-') => {
-  return str.split(separator)[0];
+const stringSplit = (str, targetPart = "0", separator = '-') => {
+  if("README.md" === str) return 0
+  if("other" === targetPart) {
+    const arr = str.split(separator)
+    arr.splice(0, 1)
+    return arr.join(separator)
+  }
+  return str.split(separator)[targetPart];
+}
+/**
+ * 获取不包含扩展名的文件名
+ * @param filename String
+ * @example:
+ * filename.md ===> filename
+ * .vuepress ===> .vuepress
+ * cname ===> cname
+ */
+const removeExt = (filename) => {
+  const lastIndex = filename.lastIndexOf(".")
+  if(1 > lastIndex)
+    return filename
+  return filename.substring(0, lastIndex)
 }
 
 module.exports = helper;
