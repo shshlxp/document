@@ -5,7 +5,7 @@ const sidebarConfig = require('../../config/sidebarConf')
 module.exports = {
   plugins: pluginConfig,
   title: "文档编写",
-  port: 3333,
+  // port: 3333,
   description: 'Markdown 文档， VuePress 文档',
   locales: {
     '/': {
